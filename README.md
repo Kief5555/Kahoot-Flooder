@@ -38,8 +38,8 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 4. After that, it should say: C: (or H:)\yourfolder
 5. Type in npm init -y keep pressing enter if it asks you for anything.
 6. Close windows powershell then go into the folder you created and delete a file that is named "index.js". (if you dont have it, skip this)
-7. Once that is completed, click [here]() to download the kahoot flooder code.
-8. Open the zip file you just downloaded and drag the all the contents into the folder you created earlier.
+7. Once that is completed, click [here](https://github.com/Kief5555/kahoot-flooder/archive/refs/heads/main.zip) to download the kahoot flooder code.
+8. Open the zip file you just downloaded and drag the all the contents into the folder you created earlier. Drag the src file in too, but ignore it.
 9. Reopen powershell and see if you still have C: (or H:)\the folder name you created earlier. If you dont, do step 3 and come back to this step after. Type in "npm i"
 10. Type in "node flood.js". If there is an error like this [here](https://ibb.co/m6hkG3V) follow the instuctions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md). If you dont have the issue, your good!
 
