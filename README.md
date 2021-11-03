@@ -21,14 +21,14 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
  1. Go to replit.com then register an account, if you have one then just login.
  2. Go to [here](https://replit.com/@PrintedWaste/Kahoot-flooder-or-SRC-FIX?v=1) and press fork.
  3. Run the program. It should work™
- 
+
 ### The harder way 
 
 1. Register an replit account if you have one login.
 2. Press the button beside this text.[![Run on Repl.it](https://repl.it/badge/github/Kief5555/kahoot-flooder)](https://repl.it/github/Kief5555/kahoot-flooder)
 3. Press "run" at the top Format: (https://ibb.co/2gdCB1t)
 4. Wait for it to install
-5. After installing, if you see something like [this](https://ibb.co/m6hkG3V) (click on the "this") follow the instructions [here]()
+5. After installing, if you see something like [this](https://ibb.co/m6hkG3V) (click on the "this") follow the instructions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md)
 6. If you do not have the error above, it should work, if it dosnt you can create an issue [here](https://github.com/Kief5555/kahoot-flooder/issues/new)
 
 ### Windows 
@@ -41,7 +41,7 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 7. Once that is completed, click [here]() to download the kahoot flooder code.
 8. Open the zip file you just downloaded and drag the all the contents into the folder you created earlier.
 9. Reopen powershell and see if you still have C: (or H:)\the folder name you created earlier. If you dont, do step 3 and come back to this step after. Type in "npm i"
-10. Type in "node flood.js". If there is an error like this [here](https://ibb.co/m6hkG3V) follow the instuctions [here](). If you dont have the issue, your good!
+10. Type in "node flood.js". If there is an error like this [here](https://ibb.co/m6hkG3V) follow the instuctions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md). If you dont have the issue, your good!
 
 ### Mac
 1. sorry, I dont have time to do mac, when I have, You will see the instuctions here. 
