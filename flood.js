@@ -1,4 +1,3 @@
-//Orginal code by: codingMASTER398#5751
 //Edited by: Kief#2583 (Made it look nice)
 //Changing this file in anyway is scrictly prohibited, do not attempt.
 
@@ -75,6 +74,7 @@ process.setMaxListeners(Number.POSITIVE_INFINITY)
 //people scammin, they hatin
 console.clear()
 console.log(chalk.red('This script should be only ran through the console or shell. Node requirements: 12^'))
+console.log(chalk.blue('V0.02 Alpha'))
 readline.question('Press enter to continue');
 
 //ok lets go baby
