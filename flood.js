@@ -506,4 +506,5 @@ function join(name, idee) {
 
 //INITIATE OF THE SPAM SPAM
 console.clear()
+console.log(chalk.yellow('Joining bots please wait..'))
 spam()//YAY WE DID IT
