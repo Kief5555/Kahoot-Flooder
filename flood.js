@@ -212,7 +212,7 @@ function spam() {
 
   if (repeattimes == bots) {
     console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
-    console.log("All join requests have finished.")
+    console.log(chalk.green("All join requests have finished."))
   } else {
     repeattimes++
 
