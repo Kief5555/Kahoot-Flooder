@@ -73,7 +73,9 @@ process.setMaxListeners(Number.POSITIVE_INFINITY)
 
 //people scammin, they hatin
 console.clear()
-console.log(chalk.red('This script should be only ran through the console or shell. Node requirements: 12^'))
+console.log(chalk.red('If you didnt not get this script from https://github.com/Kief5555/kahoot-flooder, this could be malware.\n'))
+console.log(chalk.red('This script should be ran thorugh a console, or shell. Node V12^'))
+console.log(chalk.green('________________________________________________________'))
 console.log(chalk.blue('V0.02 Alpha'))
 readline.question('Press enter to continue');
 
