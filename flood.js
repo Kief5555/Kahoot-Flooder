@@ -493,7 +493,6 @@ function join(name, idee) {
     } else {
       console.log(chalk.red(name + " Got it wrong."))
     }
-    console.log(chalk.yellow('Awaiting Questions...'))
   })
   client.on("QuizEnd", data => {
     console.log("The quiz has ended and " + name + " got rank " + data.rank)
