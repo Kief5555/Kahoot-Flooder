@@ -286,10 +286,11 @@ function join(name, idee) {
       beep()
     }
 
+    console.clear()
+    console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
     everyoneanswerthis = false
     if (question.type == "word_cloud") {
       if (usercontrolled) {
-
         if (idee == 1) {
           everyoneanswerthis = true
           answer = readline.question('type your answer> ');
@@ -492,11 +493,7 @@ function join(name, idee) {
     } else {
       console.log(chalk.red(name + " Got it wrong."))
     }
-    setTimeout(function() {
-      console.clear()
-      console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
-      console.log("All join requests have finished.")
-    }, 3000);
+    console.log(chalk.yellow('Awaiting Questions...'))
   })
   client.on("QuizEnd", data => {
     console.log("The quiz has ended and " + name + " got rank " + data.rank)
