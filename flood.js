@@ -2,7 +2,9 @@
 //Changing this file in anyway is scrictly prohibited, do not attempt.
 
 console.clear()
+
 console.log("Preparing...")
+
 //requires
 readline = require('readline-sync');
 console.log("Required readline-sync")
@@ -21,6 +23,9 @@ var beep = require('beepbeep')
 console.log("Required beepbeep")
 var chalk = require('chalk')
 console.log('Required Chalk')
+
+
+
 
 //stuff
 function getRandomInt(min, max) {
@@ -76,16 +81,17 @@ console.clear()
 console.log(chalk.red('If you didnt not get this script from https://github.com/Kief5555/kahoot-flooder, this could be malware.\n'))
 console.log(chalk.red('This script should be ran thorugh a console, or shell. Node V12^'))
 console.log(chalk.green('________________________________________________________'))
-console.log(chalk.blue('V0.02 Alpha'))
+console.log(chalk.blue('This is the development repl.'))
 readline.question('Press enter to continue');
 
 //ok lets go baby
 function ads() {
   console.clear()
-  console.log(chalk.redBright("____________________\n"))
+  console.log(chalk.redBright("____________________________________\n"))
   console.log(chalk.greenBright("Kahoot flooder"))
   console.log(chalk.greenBright("Modified by Kiefer"))
-  console.log(chalk.redBright("____________________\n"))
+  console.log(chalk.yellow('Under development web: https://KahootFlooderWeb.printedwaste.repl.co'))
+  console.log(chalk.redBright("____________________________________\n"))
 }
 
 ads()
