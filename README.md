@@ -12,6 +12,10 @@ This is a simple flooder created in javascript that is user friendly.
 * User controlled bot
 * Up to as many bots as you like.
 
+# Website
+
+Click [here](https://KahootFlooderWeb.printedwaste.repl.co) for the website.
+
 # Download/Build
 There are no downloads yet. I am not that advanced. You are going to have to build it yourself or use replit
 
@@ -19,7 +23,7 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 
 ### The easy way (might not work)
  1. Go to replit.com then register an account, if you have one then just login.
- 2. Go to [here](https://replit.com/@PrintedWaste/Kahoot-flooder-or-SRC-FIX?v=1) and press fork.
+ 2. Go to [here](https://replit.com/@PrintedWaste/Kahoot-Flooder-or-V-02?v=1) and press fork.
  3. Run the program. It should work™
 
 ### The harder way 
