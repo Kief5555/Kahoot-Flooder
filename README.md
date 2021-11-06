@@ -53,6 +53,8 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 
 # The owner that wrote the script
 * I did not write this script, however, I am providing updates, as they do not anymore. I have made it more user friendly. Owner contact info: Discord: codingMASTER398#5751
+* Website: FrancoA#0659
+
 
  
 
