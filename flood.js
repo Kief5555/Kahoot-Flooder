@@ -1,29 +1,35 @@
 //Edited by: Kief#2583 (Made it look nice)
 //Changing this file in anyway is scrictly prohibited, do not attempt.
 
-console.clear()
+//FIXS ADD ORA LOADING SPINNER TO Answering PROGRESS.
 
-console.log("Preparing...")
+console.clear()
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+import ora from 'ora';
+
+const prep = ora(`${chalk.green('Preparing..')}`).start();
 
 //requires
-readline = require('readline-sync');
+import readline from 'readline-sync'
 console.log("Required readline-sync")
-const Kahoot = require("kahoot.js-updated");
+import Kahoot from 'kahoot.js-updated'
 console.log("Required kahoot.js-updated")
-var words = require('an-array-of-english-words')
+const words = require("an-array-of-english-words");
 console.log("Required an-array-of-english-words")
-const request = require('request');
+import request from 'request'
 console.log("Required request")
-var random = require('random-name')
+import random from 'random-name'
 console.log("Required random-name")
-var setTitle = require('console-title');
+import setTitle from 'console-title'
 console.log("Required console-title")
 setTitle('Kahoot flooder');
-var beep = require('beepbeep')
+import beep from 'beepbeep'
 console.log("Required beepbeep")
-var chalk = require('chalk')
+import chalk from 'chalk'
+import { waitForDebugger } from "inspector";
 console.log('Required Chalk')
-
+prep.stop()
 
 
 
@@ -35,7 +41,7 @@ function getRandomInt(min, max) {
 }
 
 function getName() {
-  ran = getRandomInt(1, 5)
+  var ran = getRandomInt(1, 5)
   if (ran == 5) {
     request('https://apis.kahoot.it/namerator', function(error, response, body) {
       if (error) { console.log(error); }
@@ -90,7 +96,7 @@ function ads() {
   console.log(chalk.redBright("____________________________________\n"))
   console.log(chalk.greenBright("Kahoot flooder"))
   console.log(chalk.greenBright("Modified by Kiefer"))
-  console.log(chalk.yellow('Under development web: https://KahootFlooderWeb.printedwaste.repl.co'))
+  console.log(chalk.yellow('Under development web: https://www.kahootflooder.me'))
   console.log(chalk.redBright("____________________________________\n"))
 }
 
@@ -105,7 +111,7 @@ var settings_usernamebypass = 'N/A'
 var settings_usercontroled = 'N/A'
 
 //QUESTIONS TO START FLOODING
-antibotmode = readline.question(chalk.yellowBright('Use the new antibot mode? [NOT PERFECT] (y/n)> '));
+var antibotmode = readline.question(chalk.yellowBright('Use the new antibot mode? [NOT PERFECT] (y/n)> '));
 if (antibotmode == "y") {
   console.log(chalk.redBright("NOTE: 2-factor brute forcing does not work with antibot."))
   var settings_anti = chalk.green('On')
@@ -118,7 +124,7 @@ console.log('Settings\n', '> AntiBot ', settings_anti)
 
 
 
-pin = readline.question(chalk.greenBright('Enter the game pin> '));
+var pin = readline.question(chalk.greenBright('Enter the game pin> '));
 settings_pin = chalk.green(pin)
 
 console.clear()
@@ -127,7 +133,7 @@ console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', sett
 
 
 
-bots = readline.question(chalk.greenBright('Enter number of bots> '));
+var bots = readline.question(chalk.greenBright('Enter number of bots> '));
 settings_bots = chalk.green(bots)
 
 console.clear()
@@ -138,30 +144,30 @@ console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', sett
 
 
 if (antibotmode == "y") {
-  ranname = true
+  var ranname = true
   var settings_rename = chalk.green('ON (Due to antibot)')
   er = "n"
 } else {
-  ranname = readline.question(chalk.greenBright('Use random name? (y/n)> '));
+  var ranname = readline.question(chalk.greenBright('Use random name? (y/n)> '));
 
   if (ranname == "y") {
-    ranname = true
+    var ranname = true
     settings_rename = chalk.green('ON')
     settings_botname = chalk.red('Random name is on')
   } else {
-    ranname = false
+    var ranname = false
     var settings_rename = chalk.redBright('OFF')
     console.clear()
     console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename)
-    botname = readline.question(chalk.greenBright('Enter name> '));
+    var botname = readline.question(chalk.greenBright('Enter name> '));
     var settings_botname = chalk.green(botname)
-    botprefix = ""
+    var botprefix = ""
   }
   console.clear()
 
   console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname)
 
-  er = readline.question(chalk.greenBright('Use name bypass? (y/n)> '));
+  var er = readline.question(chalk.greenBright('Use name bypass? (y/n)> '));
   if (er = "y") {
     settings_usernamebypass = chalk.green('ON')
   }
@@ -175,13 +181,13 @@ if (antibotmode == "y") {
 
 console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass)
 
-usercontrolled = readline.question(chalk.green('Control the bots? (y/n)> '));
+var usercontrolled = readline.question(chalk.green('Control the bots? (y/n)> '));
 if (usercontrolled == "y") {
-  usercontrolled = true
+  var usercontrolled = true
   settings_usercontroled = chalk.green('ON')
-  beepis = readline.question(chalk.green('Beep when the bots need controlling? (y/n)> '));
+  var beepis = readline.question(chalk.green('Beep when the bots need controlling? (y/n)> '));
 } else {
-  usercontrolled = false
+  var usercontrolled = false
   settings_usercontroled = chalk.red("OFF")
   beepis = "n"
 }
@@ -189,7 +195,7 @@ if (usercontrolled == "y") {
 console.clear()
 console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
 
-confirm22 = readline.question(chalk.red('Does this look correct to you? (y/n)> '));
+var confirm22 = readline.question(chalk.red('Does this look correct to you? (y/n)> '));
 if (confirm22 == "n") {
   console.clear()
   console.log(chalk.red('Notice \n', 'Auto restart is broken. \n If it did not auto end, end the console or shell by pressing ctrl+n'))
@@ -204,7 +210,7 @@ console.clear()//nice and clean uwu
 
 console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
 
-repeattimes = 0
+var repeattimes = 0
 
 function sendjoin(name, id) {
   if (ranname) {
@@ -214,15 +220,20 @@ function sendjoin(name, id) {
   }
 }
 
+const waitingforquestions = ora(`${chalk.yellow('Waiting for questions...')}`)
+
 function spam() {
 
   if (repeattimes == bots) {
+    spinner.stop()
+    spinner.succeed('All join requests have been completed.\n')
     console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
-    console.log(chalk.green("All join requests have finished."))
+    waitingforquestions.start()
+    
   } else {
     repeattimes++
 
-    if (ranname) { rt = getRandomInt(90, 200) } else { rt = 15 }
+    if (ranname) { var rt = getRandomInt(90, 200) } else { rt = 15 }
 
     setTimeout(() => {
       spam()
@@ -239,13 +250,14 @@ function spam() {
 }
 
 process.setMaxListeners(Number.POSITIVE_INFINITY)
-
-Arandomint = 0
-todo = false
+var tojoin = bots
+var Arandomint = 0
+var todo = false
 function join(name, idee) {
   while (name == undefined) {
-    name = getName()
+    var name = getName()
   }
+  const answering_que = ora(`${chalk.yellow('Answering, please wait..')}`)
   const client = new Kahoot();
   client.setMaxListeners(Number.POSITIVE_INFINITY)
   if (er == "y") {
@@ -253,7 +265,7 @@ function join(name, idee) {
       if (err.description == "Duplicate name" & ranname) {
         sendjoin(name, idee)
       } else {
-        if (err.description = "Missing header token (pin doesn't exist)") {
+        if (err.description ==="Missing header token (pin doesn't exist)") {
           console.log(chalk.red('Error: Kahoot game pin does not exist.'))
         } else {
           console.log("Client " + idee + " failed to join with the error '" + err.description + "'")
@@ -290,18 +302,21 @@ function join(name, idee) {
   })
 
   client.on("QuestionReady", question => {
+    waitingforquestions.stop()
     if (idee == 1 & beepis == "y") {
       beep()
     }
+    
 
     console.clear()
     console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
-    everyoneanswerthis = false
+    var everyoneanswerthis = false
     if (question.type == "word_cloud") {
       if (usercontrolled) {
         if (idee == 1) {
           everyoneanswerthis = true
           answer = readline.question('type your answer> ');
+          answering_que.start()
           everyoneanswerthis = answer
           Arandomint = answer
           setTimeout(() => { client.answer(answer - 1) }, getRandomInt(1, 20000));
@@ -334,14 +349,15 @@ function join(name, idee) {
 
 
           if (idee == 1) {
-            everyoneanswerthis = true
+            var everyoneanswerthis = true
             console.log('\n')
             answer = readline.question(chalk.green('t for triangle, d for diamond> '));
             answer = answer.replace('t', 1).replace('d', 2)
-            console.log(chalk.yellow('Answering.. Please wait.'))
-            everyoneanswerthis = answer
+            answering_que.start()
+            var everyoneanswerthis = answer
             Arandomint = answer
             setTimeout(() => { client.answer(answer - 1) }, getRandomInt(1, 20000));
+
 
           } else {
             var waittill = setInterval(() => {
@@ -363,14 +379,15 @@ function join(name, idee) {
         if (question.quizQuestionAnswers[question.questionIndex] == 3) {
 
           if (idee == 1) {
-            everyoneanswerthis = true
+            var everyoneanswerthis = true
             console.log('\n')
             answer = readline.question(chalk.green('t for triangle, d for diamond, c for circle> '));
             answer = answer.replace('t', 1).replace('d', 2).replace('c', 3)
-            console.log(chalk.yellow('Answering.. Please wait.'))
+            answering_que.start()
             everyoneanswerthis = answer
             Arandomint = answer
             setTimeout(() => { client.answer(answer - 1) }, getRandomInt(1, 20000));
+
 
           } else {
             var waittill = setInterval(() => {
@@ -392,12 +409,14 @@ function join(name, idee) {
           if (idee == 1) {
             everyoneanswerthis = true
             console.log('\n')
-            answer = readline.question(chalk.green("t for triangle, d for diamond, c for circle or s for square > "));
-            answer = answer.replace('t', 1).replace('d', 2).replace('c', 3).replace('s', 4)
-            console.log(chalk.yellow('Answering.. Please wait.'))
+            var answer = readline.question(chalk.green("t for triangle, d for diamond, c for circle or s for square > "));
+            var answer = answer.replace('t', 1).replace('d', 2).replace('c', 3).replace('s', 4)
+            answering_que.start()
+           
             everyoneanswerthis = answer
             Arandomint = answer
             setTimeout(() => { client.answer(answer - 1) }, getRandomInt(1, 20000));
+
 
           } else {
             var waittill = setInterval(() => {
@@ -434,7 +453,7 @@ function join(name, idee) {
           console.log('\n')
           answer = readline.question(chalk.green('t for triangle, d for diamond, c for circle or s for square > '));
           answer = answer.replace('t', 1).replace('d', 2).replace('c', 3).replace('s', 4)
-          console.log(chalk.yellow('Answering.. Please wait.'))
+          answering_que.start()
           everyoneanswerthis = answer
           Arandomint = answer
           setTimeout(() => { client.answer(answer - 1) }, getRandomInt(1, 20000));
@@ -465,6 +484,7 @@ function join(name, idee) {
         if (idee == 1) {
           everyoneanswerthis = true
           answer = readline.question('type your answer> ');
+          answering_que.start()
           everyoneanswerthis = answer
           Arandomint = answer
           setTimeout(() => { client.answer(answer - 1) }, getRandomInt(1, 20000));
@@ -494,13 +514,17 @@ function join(name, idee) {
       sendjoin(name, idee)
     }
   })
-
+  var answerede = 0
   client.on("QuestionEnd", data => {
+    answering_que.stop()
     if (data.isCorrect) {
       console.log(chalk.green(name + " Got it correct!"))
+      waitingforquestions.start()
     } else {
       console.log(chalk.red(name + " Got it wrong."))
+      waitingforquestions.start()
     }
+
   })
   client.on("QuizEnd", data => {
     console.log("The quiz has ended and " + name + " got rank " + data.rank)
@@ -512,5 +536,5 @@ function join(name, idee) {
 
 //INITIATE OF THE SPAM SPAM
 console.clear()
-console.log(chalk.yellow('Joining bots please wait..'))
+const spinner = ora(`${chalk.yellow('Joining bots, please wait..')}`).start();
 spam()//YAY WE DID IT
