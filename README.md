@@ -14,7 +14,7 @@ This is a simple flooder created in javascript that is user friendly.
 
 # Website
 
-Click [here](https://KahootFlooderWeb.printedwaste.repl.co) for the website.
+Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the website.
 
 # Download/Build
 There are no downloads yet. I am not that advanced. You are going to have to build it yourself or use replit
@@ -36,6 +36,7 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 6. If you do not have the error above, it should work, if it dosnt you can create an issue [here](https://github.com/Kief5555/kahoot-flooder/issues/new)
 
 ### Windows 
+##OUT DATED.
 1. Go [here](https://nodejs.org/dist/v16.13.0/node-v16.13.0-x86.msi) and it should download the msi file, open it and follow the instructions to install node. If you have it, skip this step.
 2. Create a new folder on your dekstop (or anywhere else) and open windows powershell. (Press the windows key on your keyboard then type in "powershell" and open it.)
 3. In powershell, type in cd then a space, then drag your new folder you just created in. Press enter. 
