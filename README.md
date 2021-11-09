@@ -19,23 +19,12 @@ Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the
 # Download/Build
 There are downloads for mac, not windows (cause I dont own it). You can use the website, or built it your self.
 
-## Replit (The easiest)
-
-### The easy way (might not work)
- 1. Go to replit.com then register an account, if you have one then just login.
- 2. Go to [here](https://replit.com/@PrintedWaste/Kahoot-Flooder-or-V-02?v=1) and press fork.
- 3. Run the program. It should work™
-
-### The harder way 
-
-1. Register an replit account if you have one login.
-2. Press the button beside this text.[![Run on Repl.it](https://repl.it/badge/github/Kief5555/kahoot-flooder)](https://repl.it/github/Kief5555/kahoot-flooder)
-3. Press "run" at the top Format: (https://ibb.co/2gdCB1t)
-4. Wait for it to install
-5. After installing, if you see something like [this](https://ibb.co/m6hkG3V) (click on the "this") follow the instructions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md)
-6. If you do not have the error above, it should work, if it dosnt you can create an issue [here](https://github.com/Kief5555/kahoot-flooder/issues/new)
+##Replit has been removed due to the new website/app that runs replit for you.
 
 ### Windows 
+
+Please note that you are going to be downloading V1.
+App development in progress.
 
 1. Go [here](https://nodejs.org/dist/v16.13.0/node-v16.13.0-x86.msi) and it should download the msi file, open it and follow the instructions to install node. If you have it, skip this step.
 2. Create a new folder on your dekstop (or anywhere else) and open windows powershell. (Press the windows key on your keyboard then type in "powershell" and open it.)
@@ -49,7 +38,8 @@ There are downloads for mac, not windows (cause I dont own it). You can use the 
 10. Type in "node flood.js". If there is an error like this [here](https://ibb.co/m6hkG3V) follow the instuctions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md). If you dont have the issue, your good!
 
 ### Mac
-* 
+* Hold your horses! App is almost ready!
+
  
 
 # The owner that wrote the script
