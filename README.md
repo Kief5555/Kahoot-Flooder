@@ -19,7 +19,7 @@ Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the
 # Download/Build
 There are downloads for mac, not windows (cause I dont own it). You can use the website, or built it your self.
 
-##Replit has been removed due to the new website/app that runs replit for you.
+## Replit has been removed due to the new website/app that runs replit for you.
 
 ### Windows 
 
