@@ -36,7 +36,7 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 6. If you do not have the error above, it should work, if it dosnt you can create an issue [here](https://github.com/Kief5555/kahoot-flooder/issues/new)
 
 ### Windows 
-##OUT DATED.
+
 1. Go [here](https://nodejs.org/dist/v16.13.0/node-v16.13.0-x86.msi) and it should download the msi file, open it and follow the instructions to install node. If you have it, skip this step.
 2. Create a new folder on your dekstop (or anywhere else) and open windows powershell. (Press the windows key on your keyboard then type in "powershell" and open it.)
 3. In powershell, type in cd then a space, then drag your new folder you just created in. Press enter. 
@@ -49,7 +49,7 @@ There are no downloads yet. I am not that advanced. You are going to have to bui
 10. Type in "node flood.js". If there is an error like this [here](https://ibb.co/m6hkG3V) follow the instuctions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md). If you dont have the issue, your good!
 
 ### Mac
-1. sorry, I dont have time to do mac, when I have, You will see the instuctions here. 
+* 
  
 
 # The owner that wrote the script
