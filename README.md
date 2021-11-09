@@ -17,7 +17,7 @@ This is a simple flooder created in javascript that is user friendly.
 Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the website.
 
 # Download/Build
-There are no downloads yet. I am not that advanced. You are going to have to build it yourself or use replit
+There are downloads for mac, not windows (cause I dont own it). You can use the website, or built it your self.
 
 ## Replit (The easiest)
 
