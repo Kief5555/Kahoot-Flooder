@@ -10,7 +10,7 @@ This is a simple flooder created in javascript that is user friendly.
 * Random name, or you can choose your own
 * Name bypassing
 * User controlled bot
-* Up to as many bots as you like.
+* Up to as many bots as you like (max kahoot game is 2000)
 
 # Website
 
