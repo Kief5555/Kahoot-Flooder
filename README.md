@@ -23,8 +23,10 @@ There are downloads for mac, not windows (cause I dont own it). You can use the 
 
 ### Windows 
 
+Go to releases by clicking on the latest release under the "release" tab on the top right and select the lastest one and download the .exe file. Link in case you cant find relases. [here](https://github.com/Kief5555/kahoot-flooder/releases)
+
 Please note that you are going to be downloading V1.
-App development in progress.
+* This is also out dated.
 
 1. Go [here](https://nodejs.org/dist/v16.13.0/node-v16.13.0-x86.msi) and it should download the msi file, open it and follow the instructions to install node. If you have it, skip this step.
 2. Create a new folder on your dekstop (or anywhere else) and open windows powershell. (Press the windows key on your keyboard then type in "powershell" and open it.)
@@ -38,7 +40,7 @@ App development in progress.
 10. Type in "node flood.js". If there is an error like this [here](https://ibb.co/m6hkG3V) follow the instuctions [here](https://github.com/Kief5555/kahoot-flooder/blob/main/src-issue.md). If you dont have the issue, your good!
 
 ### Mac
-* Hold your horses! App is almost ready!
+Go to releases by clicking on the latest release under the "release" tab on the top right and select the lastest one then click on the "KahootFlooderApp.zip". Link in case you cant find relases. [here](https://github.com/Kief5555/kahoot-flooder/releases)
 
  
 
