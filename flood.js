@@ -1,8 +1,5 @@
 //Edited by: Kief#2583 (Made it look nice)
 //Changing this file in anyway is scrictly prohibited, do not attempt.
-
-//FIXS ADD ORA LOADING SPINNER TO Answering PROGRESS.
-
 console.clear()
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
@@ -84,14 +81,15 @@ process.setMaxListeners(Number.POSITIVE_INFINITY)
 
 //people scammin, they hatin
 console.clear()
-console.log(chalk.red('If you didnt not get this script from https://github.com/Kief5555/kahoot-flooder, this could be malware.\n'))
+console.log(chalk.red('If you didnt not get this script from https://github.com/Kief5555/kahoot-flooder or kahootflooder.me, this could be malware.\n'))
 console.log(chalk.red('This script should be ran thorugh a console, or shell. Node V12^'))
 console.log(chalk.green('________________________________________________________'))
 console.log(chalk.blue('This is the development repl.'))
-readline.question('Press enter to continue');
+readline.question(chalk.blue('Press enter to continue \n'));
 
 //ok lets go baby
 function ads() {
+  waitingforuser.stop()
   console.clear()
   console.log(chalk.redBright("____________________________________\n"))
   console.log(chalk.greenBright("Kahoot flooder"))
@@ -437,7 +435,7 @@ function join(name, idee) {
 
 
         setTimeout(() => {
-          toanswer = getRandomInt(0, question.quizQuestionAnswers[question.questionIndex] - 1)
+          var toanswer = getRandomInt(0, question.quizQuestionAnswers[question.questionIndex] - 1)
           console.log(chalk.green(name + " answered with a random answer."))
           client.answer(toanswer)
         }, getRandomInt(1, 20000));
@@ -472,7 +470,7 @@ function join(name, idee) {
 
       } else {
         setTimeout(() => {
-          toanswer = getRandomInt(0, question.quizQuestionAnswers[question.questionIndex] - 1)
+          var toanswer = getRandomInt(0, question.quizQuestionAnswers[question.questionIndex] - 1)
           console.log(chalk.green(name + " answered with a random answer."))
           client.answer(toanswer)
         }, getRandomInt(1, 20000));
