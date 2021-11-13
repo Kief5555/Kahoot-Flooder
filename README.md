@@ -12,6 +12,10 @@ This is a simple flooder created in javascript that is user friendly.
 * User controlled bot
 * Up to as many bots as you like (max kahoot game is 2000)
 
+# Problems
+* Anwering no for random name may cause some bots to not join
+* Random answer is broken, will be fixed in the next release.
+
 # Website
 
 Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the website.
