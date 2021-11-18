@@ -17,7 +17,7 @@ This is a simple flooder created in javascript that is user friendly.
 * Random answer is broken, will be fixed in the next release.
 
 # Website
-* The joining/Answering is faster if you download it(mac/windows) Scroll down to download
+* The joining/Answering is a hell of alot faster if you download it(mac/windows) Scroll down to download
 Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the website.
 
 # Download/Build
