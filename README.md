@@ -17,11 +17,12 @@ This is a simple flooder created in javascript that is user friendly.
 * Random answer is broken, will be fixed in the next release.
 
 # Website
-
+* The joining/Answering is faster if you download it(mac/windows) Scroll down to download
 Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the website.
 
 # Download/Build
-There are downloads for mac, not windows (cause I dont own it). You can use the website, or built it your self.
+Mac download: https://github.com/Kief5555/kahoot-flooder/releases/download/003/kahootflooderApp.Mac.zip
+Windows download: https://github.com/Kief5555/kahoot-flooder/releases/download/003/kahootflooderApp.Windows.setup.exe
 
 ## Replit has been removed due to the new website/app that runs replit for you.
 
