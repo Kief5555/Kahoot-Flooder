@@ -22,6 +22,7 @@ Click [here](https://www.kahootflooder.me)(https://www.kahootflooder.me) for the
 
 # Download/Build
 Mac download: https://github.com/Kief5555/kahoot-flooder/releases/download/003/kahootflooderApp.Mac.zip
+
 Windows download: https://github.com/Kief5555/kahoot-flooder/releases/download/003/kahootflooderApp.Windows.setup.exe
 
 ## Replit has been removed due to the new website/app that runs replit for you.
