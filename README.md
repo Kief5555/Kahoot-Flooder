@@ -14,7 +14,7 @@ This is a simple flooder created in javascript that is user friendly.
 
 # Problems
 * Anwering no for random name may cause some bots to not join
-* Random answer is broken, will be fixed in the next release.
+
 
 # Website
 * The joining/Answering is a hell of alot faster if you download it(mac/windows) Scroll down to download
