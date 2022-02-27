@@ -2,6 +2,8 @@
 
 * __Please keep in mind that this is against the kahoot terms of service. Use this on your own risk, I am not responsible for anything that happens to your kahoot account.__
 
+**I am taking a short brake from this project.**
+
 This is a simple flooder created in javascript that is user friendly.
 
 # Fetures
