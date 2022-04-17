@@ -1,5 +1,6 @@
 //Edited by: Kief#2583 (Made it look nice)
 //Changing this file in anyway is scrictly prohibited, do not attempt.
+//For pkg use, cause they dont support esm.. bruh, imagine.
 console.clear()
 const ora = require('ora')
 const chalk = require('chalk')
@@ -80,8 +81,7 @@ process.setMaxListeners(Number.POSITIVE_INFINITY)
 //people scammin, they hatin
 console.clear()
 console.log(chalk.red('If you didnt not get this script from https://github.com/Kief5555/kahoot-flooder or kahootflooder.me, this could be malware.\n'))
-console.log(chalk.red('This script should be ran thorugh a console, or shell. Node V12^'))
-console.log(chalk.green('You are using the app. The random name is very slow. '))
+console.log(chalk.green('You are using the app.'))
 console.log(chalk.green('________________________________________________________'))
 console.log(chalk.blue('This is 0.03 Beta Unstable.'))
 readline.question(chalk.blue('Press enter to continue \n'));
@@ -89,11 +89,11 @@ readline.question(chalk.blue('Press enter to continue \n'));
 //ok lets go baby
 function ads() {
   console.clear()
-  console.log(chalk.redBright("____________________________________\n"))
-  console.log(chalk.greenBright("Kahoot flooder"))
+  console.log(chalk.redBright("_______________________________________________________\n"))
+  console.log(chalk.greenBright("Welcome to Kahoot flooder"))
   console.log(chalk.greenBright("Modified by Kiefer"))
-  console.log(chalk.yellow('Under development web: https://www.kahootflooder.me'))
-  console.log(chalk.redBright("____________________________________\n"))
+  console.log(chalk.yellow('Website: https://www.kahootflooder.me'))
+  console.log(chalk.redBright("_______________________________________________________\n"))
 }
 
 ads()
@@ -107,7 +107,7 @@ var settings_usernamebypass = 'N/A'
 var settings_usercontroled = 'N/A'
 
 //QUESTIONS TO START FLOODING
-var antibotmode = readline.question(chalk.yellowBright('Use the new antibot mode? [NOT PERFECT] (y/n)> '));
+var antibotmode = readline.question(chalk.yellowBright('Use the new antibot mode? [NOT PERFECT] (y/n): '));
 if (antibotmode == "y") {
   console.log(chalk.redBright("NOTE: 2-factor brute forcing does not work with antibot."))
   var settings_anti = chalk.green('On')
@@ -120,7 +120,7 @@ console.log('Settings\n', '> AntiBot ', settings_anti)
 
 
 
-var pin = readline.question(chalk.greenBright('Enter the game pin> '));
+var pin = readline.question(chalk.greenBright('Enter the game pin: '));
 settings_pin = chalk.green(pin)
 
 console.clear()
@@ -129,7 +129,7 @@ console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', sett
 
 
 
-var bots = readline.question(chalk.greenBright('Enter number of bots> '));
+var bots = readline.question(chalk.greenBright('Enter number of bots: '));
 settings_bots = chalk.green(bots)
 
 console.clear()
@@ -144,8 +144,8 @@ if (antibotmode == "y") {
   var settings_rename = chalk.green('ON (Due to antibot)')
   er = "n"
 } else {
-  console.log(chalk.red('RANDOM NAME TAKES FOREVER. USE YOUR OWN NAME.'))
-  var ranname = readline.question(chalk.greenBright('Use random name? (y/n)> '));
+  console.log(chalk.red('Warning: RANDOM NAME TAKES FOREVER. USE YOUR OWN NAME.'))
+  var ranname = readline.question(chalk.greenBright('Use random name? (y/n): '));
 
   if (ranname == "y") {
     var ranname = true
@@ -156,7 +156,7 @@ if (antibotmode == "y") {
     var settings_rename = chalk.redBright('OFF')
     console.clear()
     console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename)
-    var botname = readline.question(chalk.greenBright('Enter name> '));
+    var botname = readline.question(chalk.greenBright('Enter name: '));
     var settings_botname = chalk.green(botname)
     var botprefix = ""
   }
@@ -164,7 +164,7 @@ if (antibotmode == "y") {
 
   console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname)
 
-  var er = readline.question(chalk.greenBright('Use name bypass? (y/n)> '));
+  var er = readline.question(chalk.greenBright('Use name bypass? (y/n): '));
   if (er = "y") {
     settings_usernamebypass = chalk.green('ON')
   }
@@ -178,11 +178,11 @@ if (antibotmode == "y") {
 
 console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass)
 
-var usercontrolled = readline.question(chalk.green('Control the bots? (y/n)> '));
+var usercontrolled = readline.question(chalk.green('Control the bots? (y/n): '));
 if (usercontrolled == "y") {
   var usercontrolled = true
   settings_usercontroled = chalk.green('ON')
-  var beepis = readline.question(chalk.green('Beep when the bots need controlling? (y/n)> '));
+  var beepis = readline.question(chalk.green('Beep when the bots need controlling? (y/n): '));
 } else {
   var usercontrolled = false
   settings_usercontroled = chalk.red("OFF")
@@ -192,7 +192,7 @@ if (usercontrolled == "y") {
 console.clear()
 console.log('Settings\n', '> AntiBot ', settings_anti + '\n', '> Gamepin ', settings_pin + '\n', '> Bots    ', settings_bots + '\n', '> Random name ', settings_rename + '\n', '> Bot name ', settings_botname + "\n", '> Name bypass', settings_usernamebypass + '\n', '> User controlled ', settings_usercontroled)
 
-var confirm22 = readline.question(chalk.red('Does this look correct to you? (y/n)> '));
+var confirm22 = readline.question(chalk.red('Does this look correct to you? (y/n): '));
 if (confirm22 == "n") {
   console.clear()
   console.log(chalk.red('Notice \n', 'Auto restart is broken. \n If it did not auto end, end the console or shell by pressing ctrl+n'))
